@@ -71,12 +71,12 @@ The most substantial of the four engagements:
 
 ```mermaid
 flowchart TD
-  A[Question spec<br/>44 sections] --> B[Apps Script generator]
-  B --> C[Google Form<br/>617 questions]
-  C --> D{14 Yes/No gates}
-  D -- not applicable --> E[Section skipped]
-  D -- applicable --> F[Section shown]
-  F --> G[Responses sheet]
+  A["Question spec<br/>44 sections"] --> B["Apps Script generator"]
+  B --> C["Google Form<br/>617 questions"]
+  C --> D{"14 Yes/No gates"}
+  D -- not applicable --> E["Section skipped"]
+  D -- applicable --> F["Section shown"]
+  F --> G["Responses sheet"]
   B -.rerun with edits.-> C
 ```
 
