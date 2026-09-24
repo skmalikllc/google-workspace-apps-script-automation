@@ -1,4 +1,8 @@
+<img src="https://raw.githubusercontent.com/skmalikllc/automation-portfolio/main/assets/cover-apps-script.png" alt="cover" width="100%">
+
 # Google Workspace & Apps Script Automation — case studies
+
+`SANITIZED CLIENT CASE STUDIES`
 
 **Project type:** Sanitized client case studies + one internal tool
 **Evidence sources:** completed Upwork contract (5.0), completed Fiverr orders and reviews, historical account audit
@@ -60,6 +64,24 @@ not a rebuild.
 **Project type.** Internal tool, built for my own practice — not client work.
 
 ---
+
+## Architecture — the generated form system
+
+The most substantial of the four engagements:
+
+```mermaid
+flowchart TD
+  A[Question spec<br/>44 sections] --> B[Apps Script generator]
+  B --> C[Google Form<br/>617 questions]
+  C --> D{14 Yes/No gates}
+  D -- not applicable --> E[Section skipped]
+  D -- applicable --> F[Section shown]
+  F --> G[Responses sheet]
+  B -.rerun with edits.-> C
+```
+
+Building it as a generator rather than by clicking makes it reproducible: next
+year's edition is a rerun with edits, not a rebuild.
 
 ## Implementation notes
 
